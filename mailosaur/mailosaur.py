@@ -2,7 +2,7 @@ import time
 import uuid
 import requests
 
-from email import Email
+from .email import Email
 
 
 # Main class to access Mailosaur.com api.
