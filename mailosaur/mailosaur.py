@@ -1,5 +1,6 @@
 import time
 import uuid
+
 import requests
 
 from .email import Email
@@ -19,7 +20,7 @@ class Mailosaur:
         if not search_criteria:
             search_criteria = dict()
         params = dict()
-        if isinstance(search_criteria, basestring):
+        if isinstance(search_criteria, str):
             params['search'] = search_criteria
         else:
             params = search_criteria
